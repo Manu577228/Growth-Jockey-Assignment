@@ -1,15 +1,24 @@
 import React from "react";
 import "./card.css";
-import {FaCopy} from 'react-icons/fa'
+import { FaCopy } from "react-icons/fa";
 
 const Card = () => {
   return (
     <div className="card">
-      <p className="heading">PS3&SVBIA <span className="copy-icon"><FaCopy /></span></p>
+      <p className="heading">
+        PS3&SVBIA{" "}
+        <span className="copy-icon">
+          <FaCopy />
+        </span>
+      </p>
       <div className="character">
         <p>
           Character Length <span className="number">4</span>
         </p>
+        <progress className="file-progressbar" value="40" max="100">
+          {" "}
+          4%{" "}
+        </progress>
       </div>
       <div class="loader-line"></div>
 
@@ -33,8 +42,15 @@ const Card = () => {
       </div>
       <div className="strength">
         <p>
-          STRENGTH<span className="poor">poor</span>
+          STRENGTH<span className="poor">poor</span> 
         </p>
+        <div className="file-progressbar-2">
+          <progress className="prog" value="100" max="100"></progress>
+          <progress className="prog" value="100" max="100"></progress>
+          <progress value="0" max="100"></progress>
+          <progress value="0" max="100"></progress>
+          <progress value="0" max="100"></progress>
+        </div>
       </div>
       <button className="btn">Generate</button>
     </div>
