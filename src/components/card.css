@@ -32,10 +32,6 @@
   width: 100%;
 }
 
-.prog-value {
-  color: red;
-}
-
 .number {
   color: #ffffff;
   display: flex;
@@ -80,6 +76,10 @@ input {
   justify-content: flex-end;
   margin-left: 320px;
   margin-top: -20px;
+}
+
+.prog {
+ accent-color: red;
 }
 
 .btn {
